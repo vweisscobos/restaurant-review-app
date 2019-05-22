@@ -162,6 +162,7 @@ createRestaurantHTML = (restaurant) => {
   image.className = 'restaurant-img';
   image.setAttribute('aria-hidden', 'true');
   image.src = DBHelper.imageUrlForRestaurant(restaurant);
+  image.setAttribute('alt', restaurant.imgDescription);
 
   const imgWrapper = document.createElement('div');
   imgWrapper.classList.add('img-responsive');
